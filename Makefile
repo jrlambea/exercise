@@ -2,8 +2,10 @@ setup:
 	python3 -m venv ~/.exercise
 
 install:
-	pip install --upgrade pip &&\
-		pip install -r requirements.txt
+	wget https://github.com/hadolint/hadolint/releases/download/v1.17.5/hadolint-Linux-x86_64 -O hadolint
+	chmod 755 hadolint
+	#pip install --upgrade pip &&\
+	#	pip install -r requirements.txt
 
 test:
 	#python -m pytest -vv --cov=myrepolib tests/*.py
