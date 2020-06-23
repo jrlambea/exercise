@@ -13,6 +13,6 @@ test:
 
 lint:
 	./hadolint Dockerfile --ignore DL3013
-	pylint --disable=R,C,W1203 demos/**/**.py
+	pylint --disable=R,C,W1203 app/hello.py
 
 all: install lint test
