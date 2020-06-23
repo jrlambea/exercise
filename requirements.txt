@@ -1,1 +1,1 @@
-hadolint
+pylint
